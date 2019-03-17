@@ -1,2 +1,10 @@
 mad_libs.vcxignore*
+
 Debug
+mad_libs/.vs/mad_libs/v15/.suo
+mad_libs/.vs/mad_libs/v15/Browse.VC.db
+mad_libs/.vs/mad_libs/v15/Browse.VC.opendb
+mad_libs/mad_libs.sln
+mad_libs/mad_libs/mad_libs.vcxproj
+mad_libs/mad_libs/mad_libs.vcxproj.filters
+mad_libs/mad_libs/mad_libs.vcxproj.user
