@@ -15,6 +15,11 @@ public:
     explicit WordInput(QWidget *parent = nullptr);
     ~WordInput();
 
+private slots:
+    void on_buttonBox_clicked(QAbstractButton *button);
+
+    void on_buttonBox_accepted();
+
 private:
     Ui::WordInput *ui;
 };

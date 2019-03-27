@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "wordinput.h"
+#include "story.h"
 
 namespace Ui {
 class MadLibs;
@@ -22,6 +23,7 @@ private slots:
 private:
     Ui::MadLibs *ui;
     WordInput *wordInput;
+    Story *story;
 };
 
 #endif // MADLIBS_H
