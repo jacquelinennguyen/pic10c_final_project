@@ -8,3 +8,5 @@ mad_libs/mad_libs.sln
 mad_libs/mad_libs/mad_libs.vcxproj
 mad_libs/mad_libs/mad_libs.vcxproj.filters
 mad_libs/mad_libs/mad_libs.vcxproj.user
+
+build-mad_libs_ui-Desktop_Qt_5_12_1_MinGW_64_bit-Debug/mad_libs/.vs/

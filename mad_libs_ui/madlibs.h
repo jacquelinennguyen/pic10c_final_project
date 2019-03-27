@@ -15,6 +15,9 @@ public:
     explicit MadLibs(QWidget *parent = nullptr);
     ~MadLibs();
 
+private slots:
+    void on_Story_clicked();
+
 private:
     Ui::MadLibs *ui;
 };
