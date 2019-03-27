@@ -2,6 +2,8 @@
 #define MADLIBS_H
 
 #include <QMainWindow>
+#include "dialog.h"
+
 
 namespace Ui {
 class MadLibs;
@@ -20,6 +22,7 @@ private slots:
 
 private:
     Ui::MadLibs *ui;
+    Dialog *secDialog;
 };
 
 #endif // MADLIBS_H
