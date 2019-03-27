@@ -20,4 +20,5 @@ void MadLibs::on_Story_clicked()
     //secdialog.exec();
     secDialog = new Dialog(this);
     secDialog->show();
+    this->hide();
 }
