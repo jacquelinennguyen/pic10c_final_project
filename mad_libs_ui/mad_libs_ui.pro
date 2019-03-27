@@ -26,13 +26,19 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        madlibs.cpp
+        madlibs.cpp \
+    wordinput.cpp \
+    story.cpp
 
 HEADERS += \
-        madlibs.h
+        madlibs.h \
+    wordinput.h \
+    story.h
 
 FORMS += \
-        madlibs.ui
+        madlibs.ui \
+    wordinput.ui \
+    story.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

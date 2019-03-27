@@ -15,10 +15,7 @@ MadLibs::~MadLibs()
 
 void MadLibs::on_Story_clicked()
 {
-    //Dialog secdialog;
-    //secdialog.setModal(true);
-    //secdialog.exec();
-    secDialog = new Dialog(this);
-    secDialog->show();
+    wordInput = new WordInput(this);
+    wordInput->show();
     this->hide();
 }

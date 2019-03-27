@@ -2,8 +2,7 @@
 #define MADLIBS_H
 
 #include <QMainWindow>
-#include "dialog.h"
-
+#include "wordinput.h"
 
 namespace Ui {
 class MadLibs;
@@ -22,7 +21,7 @@ private slots:
 
 private:
     Ui::MadLibs *ui;
-    Dialog *secDialog;
+    WordInput *wordInput;
 };
 
 #endif // MADLIBS_H
