@@ -18,6 +18,8 @@ WordInput::~WordInput()
 void WordInput::on_buttonBox_accepted()
 {
    hide();
-   story = new Story(this);
+   Story *story = new Story(this);
    story->show();
 }
+
+

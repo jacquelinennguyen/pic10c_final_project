@@ -2,13 +2,22 @@
 <ui version="4.0">
  <class>Story</class>
  <widget class="QDialog" name="Story">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>533</width>
-    <height>420</height>
+    <width>557</width>
+    <height>445</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
@@ -40,6 +49,9 @@
      <widget class="QLabel" name="label_2">
       <property name="text">
        <string>Would you like me to generate another story?</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
       </property>
      </widget>
     </item>

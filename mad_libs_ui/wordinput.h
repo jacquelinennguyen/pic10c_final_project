@@ -2,6 +2,7 @@
 #define WORDINPUT_H
 
 #include <QDialog>
+#include <QAbstractButton>
 
 namespace Ui {
 class WordInput;
@@ -16,8 +17,6 @@ public:
     ~WordInput();
 
 private slots:
-    void on_buttonBox_clicked(QAbstractButton *button);
-
     void on_buttonBox_accepted();
 
 private:

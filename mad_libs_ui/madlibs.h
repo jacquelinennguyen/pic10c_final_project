@@ -23,7 +23,6 @@ private slots:
 private:
     Ui::MadLibs *ui;
     WordInput *wordInput;
-    Story *story;
 };
 
 #endif // MADLIBS_H
