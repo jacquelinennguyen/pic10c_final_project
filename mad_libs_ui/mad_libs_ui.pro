@@ -27,15 +27,18 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         madlibs.cpp \
-    dialog.cpp
+    dialog.cpp \
+    secdialog.cpp
 
 HEADERS += \
         madlibs.h \
-    dialog.h
+    dialog.h \
+    secdialog.h
 
 FORMS += \
         madlibs.ui \
-    dialog.ui
+    dialog.ui \
+    secdialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
