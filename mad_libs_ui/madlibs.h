@@ -20,6 +20,8 @@ public:
 private slots:
     void on_Story_clicked();
 
+    void on_Story_1_clicked();
+
 private:
     Ui::MadLibs *ui;
     WordInput *wordInput;

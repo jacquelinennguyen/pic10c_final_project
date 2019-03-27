@@ -13,7 +13,8 @@ MadLibs::~MadLibs()
     delete ui;
 }
 
-void MadLibs::on_Story_clicked()
+
+void MadLibs::on_Story_1_clicked()
 {
     wordInput = new WordInput(this);
     wordInput->show();

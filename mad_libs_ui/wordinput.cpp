@@ -23,3 +23,10 @@ void WordInput::on_buttonBox_accepted()
 }
 
 
+
+void WordInput::on_buttonBox_rejected()
+{
+    MadLibs *mainWindow = new MadLibs(this);
+    mainWindow->show();
+    this->hide();
+}
