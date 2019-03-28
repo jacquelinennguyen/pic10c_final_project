@@ -11,13 +11,13 @@ MadLibs::MadLibs(QWidget *parent) :
 MadLibs::~MadLibs()
 {
     delete ui;
-    delete wordInput;
+   // delete wordInput;
 }
 
 
 void MadLibs::on_Story_1_clicked()
 {
-    wordInput = new WordInput(this);
+    WordInput *wordInput = new WordInput(this);
     wordInput->show();
     this->hide();
 }

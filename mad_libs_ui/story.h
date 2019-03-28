@@ -23,7 +23,7 @@ private slots:
 
 private:
     Ui::Story *ui;
-    MadLibs *mainWindow;
+    //MadLibs *mainWindow;
 };
 
 #endif // STORY_H

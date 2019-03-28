@@ -25,8 +25,8 @@ private slots:
 
 private:
     Ui::WordInput *ui;
-    Story *story;
-    MadLibs *mainW;
+    //Story *story;
+    //MadLibs *mainW;
 };
 
 #endif // WORDINPUT_H
