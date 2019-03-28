@@ -12,11 +12,12 @@ Story::Story(QWidget *parent) :
 Story::~Story()
 {
     delete ui;
+    delete mainWindow;
 }
 
 void Story::on_pushButton_clicked()
 {
-    MadLibs *mainWindow = new MadLibs(this);
+    mainWindow = new MadLibs(this);
     mainWindow->show();
     this->hide();
 }

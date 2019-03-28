@@ -3,6 +3,8 @@
 
 #include <QDialog>
 #include <QAbstractButton>
+#include "story.h"
+#include "madlibs.h"
 
 namespace Ui {
 class WordInput;
@@ -23,6 +25,8 @@ private slots:
 
 private:
     Ui::WordInput *ui;
+    Story *story;
+    MadLibs *mainW;
 };
 
 #endif // WORDINPUT_H

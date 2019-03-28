@@ -11,6 +11,7 @@ MadLibs::MadLibs(QWidget *parent) :
 MadLibs::~MadLibs()
 {
     delete ui;
+    delete wordInput;
 }
 
 

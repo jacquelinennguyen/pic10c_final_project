@@ -13,12 +13,14 @@ WordInput::WordInput(QWidget *parent) :
 WordInput::~WordInput()
 {
     delete ui;
+    delete story;
+    delete mainW;
 }
 
 void WordInput::on_buttonBox_accepted()
 {
    hide();
-   Story *story = new Story(this);
+   story = new Story(this);
    story->show();
 }
 
@@ -26,7 +28,7 @@ void WordInput::on_buttonBox_accepted()
 
 void WordInput::on_buttonBox_rejected()
 {
-    MadLibs *mainWindow = new MadLibs(this);
-    mainWindow->show();
+    mainW = new MadLibs(this);
+    mainW->show();
     this->hide();
 }

@@ -2,6 +2,7 @@
 #define STORY_H
 
 #include <QDialog>
+#include "madlibs.h"
 
 namespace Ui {
 class Story;
@@ -22,6 +23,7 @@ private slots:
 
 private:
     Ui::Story *ui;
+    MadLibs *mainWindow;
 };
 
 #endif // STORY_H
