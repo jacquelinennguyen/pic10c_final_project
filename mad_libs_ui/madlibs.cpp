@@ -12,10 +12,25 @@ MadLibs::~MadLibs()
 {
     delete ui;
    // delete wordInput;
+    //need to delete all new heap memory
 }
 
 
 void MadLibs::on_Story_1_clicked()
+{
+    WordInput *wordInput = new WordInput(this);
+    wordInput->show();
+    this->hide();
+}
+
+void MadLibs::on_Story_2_clicked()
+{
+    WordInput *wordInput = new WordInput(this);
+    wordInput->show();
+    this->hide();
+}
+
+void MadLibs::on_Story_3_clicked()
 {
     WordInput *wordInput = new WordInput(this);
     wordInput->show();

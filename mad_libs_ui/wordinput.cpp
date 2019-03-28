@@ -24,8 +24,6 @@ void WordInput::on_buttonBox_accepted()
    story->show();
 }
 
-
-
 void WordInput::on_buttonBox_rejected()
 {
     MadLibs *mainW = new MadLibs(this);

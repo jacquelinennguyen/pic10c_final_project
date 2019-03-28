@@ -43,23 +43,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>Go to Second Dialog</string>
+     <string>Thanksgiving</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Story_2">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>320</y>
-      <width>211</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Go to Second Dialog</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Story_3">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -69,10 +56,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>Go to Second Dialog</string>
+     <string>Our Solar System</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="Story_4">
+   <widget class="QPushButton" name="Story_3">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -82,33 +69,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Go to Second Dialog</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Story_5">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>220</y>
-      <width>211</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Go to Second Dialog</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Story_6">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>270</y>
-      <width>211</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Go to Second Dialog</string>
+     <string>Vacations</string>
     </property>
    </widget>
   </widget>
