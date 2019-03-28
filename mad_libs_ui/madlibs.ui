@@ -6,79 +6,57 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>541</width>
-    <height>421</height>
+    <width>504</width>
+    <height>396</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MadLibs</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="Welcome">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>20</y>
-      <width>341</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Welcome! Allow me to generate a story for you. Please select a story:</string>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::AutoText</enum>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Story_1">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>70</y>
-      <width>211</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Thanksgiving</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Story_2">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>120</y>
-      <width>211</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Our Solar System</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Story_3">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>170</y>
-      <width>211</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Vacations</string>
-    </property>
-   </widget>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="Welcome">
+      <property name="text">
+       <string>Welcome! Allow me to generate a story for you. Please select a story:</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Story_1">
+      <property name="text">
+       <string>Thanksgiving</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Story_2">
+      <property name="text">
+       <string>Our Solar System</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Story_3">
+      <property name="text">
+       <string>Vacations</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>541</width>
+     <width>504</width>
      <height>21</height>
     </rect>
    </property>
