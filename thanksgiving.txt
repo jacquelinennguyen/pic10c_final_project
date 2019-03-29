@@ -1,6 +1,0 @@
-Thanksgiving
-
-It was Thanksgiving, and the scent of succulent roast <NOUN> wafted through my house. "<PERSON_IN_ROOM>, it's my time to <VERB>!" my mother called. I couldn't wait to get my <BODY_PART> on that <ADJECTIVE> Thanksgiving meal. My family sat around the dining room <NOUN>. The table was laid out with every kind of <NOUN>. There was a basket of hot buttered <PLURAL_NOUN> and glasses of sparkling <LIQUID>. The <ADJECTIVE> turkey sat, steaming, next to a tureen of <NOUN> gravy. A bowl of ruby-red <NOUN> sauce, a sweet-<NOUN> casserole, and a dish of mashed <PLURAL_NOUN> tempted my tastebuds. But the dish I looked forward to the most was Grandma <WOMAN>'s famous <NOUN> pie. Thanksgiving is my favorite holiday, <PLURAL_BODY_PART> down.
-
-
-

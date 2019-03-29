@@ -14,3 +14,13 @@ Story::~Story()
     delete ui;
     //delete mainWindow;
 }
+
+void Story::on_pushButton_clicked()
+{
+
+}
+
+void Story::on_pushButton_2_clicked()
+{
+
+}

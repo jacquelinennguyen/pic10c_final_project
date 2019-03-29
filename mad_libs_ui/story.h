@@ -18,8 +18,13 @@ public:
 
 private slots:
 
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     Ui::Story *ui;
+    friend class MadLibs;
 };
 
 #endif // STORY_H
