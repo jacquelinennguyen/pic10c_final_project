@@ -14,8 +14,21 @@
    <string>MadLibs</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="0">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="Welcome">
+      <property name="text">
+       <string>Welcome! Allow me to generate a story for you. Please select a story:</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
      <layout class="QHBoxLayout" name="ButtonsLayout">
       <item>
        <widget class="QPushButton" name="ThanksgivingButton">
@@ -40,23 +53,10 @@
       </item>
      </layout>
     </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="Welcome">
-      <property name="text">
-       <string>Welcome! Allow me to generate a story for you. Please select a story:</string>
-      </property>
-      <property name="textFormat">
-       <enum>Qt::AutoText</enum>
-      </property>
-      <property name="wordWrap">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
+    <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="Thanksgiving">
        <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -319,6 +319,13 @@
            </layout>
           </item>
          </layout>
+        </item>
+        <item>
+         <widget class="QDialogButtonBox" name="ThanksgivingButtonBox">
+          <property name="standardButtons">
+           <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -612,6 +619,13 @@
           </item>
          </layout>
         </item>
+        <item>
+         <widget class="QDialogButtonBox" name="SolarButtonBox">
+          <property name="standardButtons">
+           <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+          </property>
+         </widget>
+        </item>
        </layout>
       </widget>
       <widget class="QWidget" name="Vacations">
@@ -876,33 +890,15 @@
           </item>
          </layout>
         </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="page_4">
-       <layout class="QFormLayout" name="formLayout">
-        <item row="0" column="0">
-         <widget class="QLabel" name="label_55">
-          <property name="text">
-           <string>Title</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="0">
-         <widget class="QLabel" name="label_56">
-          <property name="text">
-           <string>Story goes here</string>
+        <item>
+         <widget class="QDialogButtonBox" name="VacationsButtonBox">
+          <property name="standardButtons">
+           <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
           </property>
          </widget>
         </item>
        </layout>
       </widget>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QDialogButtonBox" name="buttonBox">
-      <property name="standardButtons">
-       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-      </property>
      </widget>
     </item>
    </layout>

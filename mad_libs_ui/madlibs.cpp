@@ -12,11 +12,7 @@ MadLibs::MadLibs(QWidget *parent) :
 MadLibs::~MadLibs()
 {
     delete ui;
-   // delete wordInput;
-    //need to delete all new heap memory
 }
-
-
 
 void MadLibs::on_VacationsButton_clicked()
 {

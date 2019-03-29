@@ -27,17 +27,14 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         madlibs.cpp \
-    wordinput.cpp \
     story.cpp
 
 HEADERS += \
         madlibs.h \
-    wordinput.h \
     story.h
 
 FORMS += \
         madlibs.ui \
-    wordinput.ui \
     story.ui
 
 # Default rules for deployment.
