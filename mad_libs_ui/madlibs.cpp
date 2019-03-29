@@ -1,5 +1,6 @@
 #include "madlibs.h"
 #include "ui_madlibs.h"
+#include <QStackedWidget>
 
 MadLibs::MadLibs(QWidget *parent) :
     QMainWindow(parent),
@@ -16,23 +17,18 @@ MadLibs::~MadLibs()
 }
 
 
-void MadLibs::on_Story_1_clicked()
+
+void MadLibs::on_VacationsButton_clicked()
 {
-    WordInput *wordInput = new WordInput(this);
-    wordInput->show();
-    this->hide();
+    ui->stackedWidget->setCurrentWidget(ui->Vacations);
 }
 
-void MadLibs::on_Story_2_clicked()
+void MadLibs::on_SolarButton_clicked()
 {
-    WordInput *wordInput = new WordInput(this);
-    wordInput->show();
-    this->hide();
+    ui->stackedWidget->setCurrentWidget(ui->OurSolarSystem);
 }
 
-void MadLibs::on_Story_3_clicked()
+void MadLibs::on_ThanksgivingButton_clicked()
 {
-    WordInput *wordInput = new WordInput(this);
-    wordInput->show();
-    this->hide();
+    ui->stackedWidget->setCurrentWidget(ui->Thanksgiving);
 }

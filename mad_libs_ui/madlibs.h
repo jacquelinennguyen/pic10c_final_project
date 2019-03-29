@@ -18,15 +18,15 @@ public:
     ~MadLibs();
 
 private slots:
-    void on_Story_1_clicked();
 
-    void on_Story_2_clicked();
+    void on_VacationsButton_clicked();
 
-    void on_Story_3_clicked();
+    void on_SolarButton_clicked();
+
+    void on_ThanksgivingButton_clicked();
 
 private:
     Ui::MadLibs *ui;
-    //WordInput *wordInput;
 };
 
 #endif // MADLIBS_H
