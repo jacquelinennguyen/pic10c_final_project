@@ -14,8 +14,33 @@
    <string>MadLibs</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_53">
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Thanksgiving</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>Our Solar System</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>Vacations</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
      <widget class="QLabel" name="Welcome">
       <property name="text">
        <string>Welcome! Allow me to generate a story for you. Please select a story:</string>
@@ -28,10 +53,10 @@
       </property>
      </widget>
     </item>
-    <item>
+    <item row="2" column="0">
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="Thanksgiving">
        <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -300,146 +325,16 @@
       <widget class="QWidget" name="OurSolarSystem">
        <layout class="QVBoxLayout" name="verticalLayout_7">
         <item>
-         <widget class="QLabel" name="label_19">
+         <widget class="QLabel" name="OurSolarSystemLabel">
           <property name="text">
            <string>Our Solar System</string>
           </property>
          </widget>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="ThanksgivingLayout_2">
+         <layout class="QHBoxLayout" name="OurSolarSystemLayout">
           <item>
            <layout class="QVBoxLayout" name="verticalLayout_5">
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_18">
-              <item>
-               <widget class="QLabel" name="label_20">
-                <property name="text">
-                 <string>Noun 1:</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="thx_noun1_2"/>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_19">
-              <item>
-               <widget class="QLabel" name="label_21">
-                <property name="text">
-                 <string>Noun 2:</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="thx_noun2_2"/>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_20">
-              <item>
-               <widget class="QLabel" name="label_22">
-                <property name="text">
-                 <string>Noun 3:</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="thx_noun3_2"/>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_21">
-              <item>
-               <widget class="QLabel" name="label_23">
-                <property name="text">
-                 <string>Noun 4:</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="thx_noun4_2"/>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_22">
-              <item>
-               <widget class="QLabel" name="label_24">
-                <property name="text">
-                 <string>Noun 5:</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="thx_noun5_2"/>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_23">
-              <item>
-               <widget class="QLabel" name="label_25">
-                <property name="text">
-                 <string>Noun 6:</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="thx_noun6_2"/>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_24">
-              <item>
-               <widget class="QLabel" name="label_26">
-                <property name="text">
-                 <string>Noun 7:</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="thx_noun7_2"/>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_25">
-              <item>
-               <widget class="QLabel" name="label_27">
-                <property name="text">
-                 <string>Plural Noun 1:</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="thx_plnoun1_2"/>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_26">
-              <item>
-               <widget class="QLabel" name="label_28">
-                <property name="text">
-                 <string>Plural Noun 2:</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="thx_plnoun2_2"/>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_6">
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_27">
               <item>
@@ -473,7 +368,7 @@
               <item>
                <widget class="QLabel" name="label_31">
                 <property name="text">
-                 <string>Name of a boy part:</string>
+                 <string>Adjective 3:</string>
                 </property>
                </widget>
               </item>
@@ -487,7 +382,7 @@
               <item>
                <widget class="QLabel" name="label_32">
                 <property name="text">
-                 <string>Plural body part:</string>
+                 <string>Adjective 4:</string>
                 </property>
                </widget>
               </item>
@@ -497,11 +392,127 @@
              </layout>
             </item>
             <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_54">
+              <item>
+               <widget class="QLabel" name="label_58">
+                <property name="text">
+                 <string>Number:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="thx_plbody_4"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_20">
+              <item>
+               <widget class="QLabel" name="label_22">
+                <property name="text">
+                 <string>Adverb::</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="thx_noun3_2"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_21">
+              <item>
+               <widget class="QLabel" name="label_23">
+                <property name="text">
+                 <string>Verb ending in -ing:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="thx_noun4_2"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_25">
+              <item>
+               <widget class="QLabel" name="label_27">
+                <property name="text">
+                 <string>Plural Noun 1:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="thx_plnoun1_2"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_26">
+              <item>
+               <widget class="QLabel" name="label_28">
+                <property name="text">
+                 <string>Plural Noun 2:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="thx_plnoun2_2"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_24">
+              <item>
+               <widget class="QLabel" name="label_26">
+                <property name="text">
+                 <string>Plural Noun 3:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="thx_noun7_2"/>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_18">
+              <item>
+               <widget class="QLabel" name="label_20">
+                <property name="text">
+                 <string>Noun:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="thx_noun1_2"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_19">
+              <item>
+               <widget class="QLabel" name="label_21">
+                <property name="text">
+                 <string>Silly Noun:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="thx_noun2_2"/>
+              </item>
+             </layout>
+            </item>
+            <item>
              <layout class="QHBoxLayout" name="horizontalLayout_31">
               <item>
                <widget class="QLabel" name="label_33">
                 <property name="text">
-                 <string>Name of a liquid:</string>
+                 <string>First Name 1:</string>
                 </property>
                </widget>
               </item>
@@ -515,7 +526,7 @@
               <item>
                <widget class="QLabel" name="label_34">
                 <property name="text">
-                 <string>Name of Person in the Room:</string>
+                 <string>First Name 2:</string>
                 </property>
                 <property name="wordWrap">
                  <bool>true</bool>
@@ -532,7 +543,7 @@
               <item>
                <widget class="QLabel" name="label_35">
                 <property name="text">
-                 <string>Verb:</string>
+                 <string>First Name 3:</string>
                 </property>
                </widget>
               </item>
@@ -546,12 +557,54 @@
               <item>
                <widget class="QLabel" name="label_36">
                 <property name="text">
-                 <string>Name of a female person:</string>
+                 <string>First Name 4:</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QLineEdit" name="thx_female_2"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_22">
+              <item>
+               <widget class="QLabel" name="label_24">
+                <property name="text">
+                 <string>First Name 5:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="thx_noun5_2"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_52">
+              <item>
+               <widget class="QLabel" name="label_57">
+                <property name="text">
+                 <string>First Name 6:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="thx_noun6_4"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_23">
+              <item>
+               <widget class="QLabel" name="label_25">
+                <property name="text">
+                 <string>First Name 7:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="thx_noun6_2"/>
               </item>
              </layout>
             </item>
@@ -621,7 +674,7 @@
               <item>
                <widget class="QLabel" name="label_41">
                 <property name="text">
-                 <string>Noun 4:</string>
+                 <string>Body part:</string>
                 </property>
                </widget>
               </item>
@@ -635,7 +688,7 @@
               <item>
                <widget class="QLabel" name="label_42">
                 <property name="text">
-                 <string>Noun 5:</string>
+                 <string>Plant:</string>
                 </property>
                </widget>
               </item>
@@ -649,7 +702,7 @@
               <item>
                <widget class="QLabel" name="label_43">
                 <property name="text">
-                 <string>Noun 6:</string>
+                 <string>Verb ending in -ing 1:</string>
                 </property>
                </widget>
               </item>
@@ -663,7 +716,7 @@
               <item>
                <widget class="QLabel" name="label_44">
                 <property name="text">
-                 <string>Noun 7:</string>
+                 <string>Verb ending in -ing 2:</string>
                 </property>
                </widget>
               </item>
@@ -677,7 +730,7 @@
               <item>
                <widget class="QLabel" name="label_45">
                 <property name="text">
-                 <string>Plural Noun 1:</string>
+                 <string>Verb ending in -ing 3:</string>
                 </property>
                </widget>
               </item>
@@ -691,7 +744,7 @@
               <item>
                <widget class="QLabel" name="label_46">
                 <property name="text">
-                 <string>Plural Noun 2:</string>
+                 <string>Verb ending in -ing 4:</string>
                 </property>
                </widget>
               </item>
@@ -737,7 +790,7 @@
               <item>
                <widget class="QLabel" name="label_49">
                 <property name="text">
-                 <string>Name of a boy part:</string>
+                 <string>Adjective 3:</string>
                 </property>
                </widget>
               </item>
@@ -751,7 +804,7 @@
               <item>
                <widget class="QLabel" name="label_50">
                 <property name="text">
-                 <string>Plural body part:</string>
+                 <string>Plural Noun 1:</string>
                 </property>
                </widget>
               </item>
@@ -765,7 +818,7 @@
               <item>
                <widget class="QLabel" name="label_51">
                 <property name="text">
-                 <string>Name of a liquid:</string>
+                 <string>Plural Noun 2:</string>
                 </property>
                </widget>
               </item>
@@ -779,7 +832,7 @@
               <item>
                <widget class="QLabel" name="label_52">
                 <property name="text">
-                 <string>Name of Person in the Room:</string>
+                 <string>Plural Noun 3:</string>
                 </property>
                 <property name="wordWrap">
                  <bool>true</bool>
@@ -796,7 +849,7 @@
               <item>
                <widget class="QLabel" name="label_53">
                 <property name="text">
-                 <string>Verb:</string>
+                 <string>Plura Noun 4:</string>
                 </property>
                </widget>
               </item>
@@ -810,7 +863,7 @@
               <item>
                <widget class="QLabel" name="label_54">
                 <property name="text">
-                 <string>Name of a female person:</string>
+                 <string>Place:</string>
                 </property>
                </widget>
               </item>
@@ -826,15 +879,15 @@
        </layout>
       </widget>
       <widget class="QWidget" name="page_4">
-       <layout class="QVBoxLayout" name="verticalLayout_11">
-        <item>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
          <widget class="QLabel" name="label_55">
           <property name="text">
            <string>Title</string>
           </property>
          </widget>
         </item>
-        <item>
+        <item row="1" column="0">
          <widget class="QLabel" name="label_56">
           <property name="text">
            <string>Story goes here</string>
@@ -845,7 +898,7 @@
       </widget>
      </widget>
     </item>
-    <item>
+    <item row="3" column="0">
      <widget class="QDialogButtonBox" name="buttonBox">
       <property name="standardButtons">
        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
