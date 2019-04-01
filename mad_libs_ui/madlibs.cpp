@@ -108,15 +108,27 @@ QString MadLibs::thanksStory() {
     QString adj1 = ui->thx_adj1->text(); QString adj2 = ui->thx_adj2->text();
     QString adjs[] = {adj1,adj2};
     QString verb = ui->thx_verb->text(); QString body = ui->thx_body->text();
-    QString verbs[] = {verb};
     QString female = ui->thx_female->text(); QString liquid = ui->thx_liquid->text();
     QString person = ui->thx_person->text(); QString plbody = ui->thx_plbody->text();
     QString plnoun1 = ui->thx_plnoun1->text(); QString plnoun2 = ui->thx_plnoun2->text();
+    QString plns[] = {plnoun1,plnoun2};
 
     QString th = readStory("C:\\Users\\beuyenj\\Documents\\le college\\PIC10C\\final project\\pic10c_final_project\\mad_libs_ui\\thanksgiving.txt");
     for (int i = 0; i < nouns->size(); i++) {
         th.replace("<NOUN"+QString::number(i+1)+">",nouns[i]);
     }
+    for (int i = 0; i < adjs->size(); i++) {
+        th.replace("<ADJECTIVE"+QString::number(i+1)+">",adjs[i]);
+    }
+    for (int i = 0; i < plns->size(); i++) {
+        th.replace("<PLURAL_NOUN"+QString::number(i+1)+">",plns[i]);
+    }
+    th.replace("<VERB>",verb);
+    th.replace("<WOMAN>",female);
+    th.replace("<BODY_PART>",body);
+    th.replace("<LIQUID>",liquid);
+    th.replace("<PERSON_IN_ROOM>",person);
+    th.replace("<PLURAL_BODY_PART>",plbody);
     return th;
 }
 
