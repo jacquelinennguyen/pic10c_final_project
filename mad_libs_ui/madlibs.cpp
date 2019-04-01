@@ -117,6 +117,8 @@ QString MadLibs::thanksStory() {
     for (int i = 0; i < nouns->size(); i++) {
         th.replace("<NOUN"+QString::number(i+1)+">",nouns[i]);
     }
+    th.replace("<NOUN6>",nouns[5]);
+    th.replace("<NOUN7>",nouns[6]);
     for (int i = 0; i < adjs->size(); i++) {
         th.replace("<ADJECTIVE"+QString::number(i+1)+">",adjs[i]);
     }
