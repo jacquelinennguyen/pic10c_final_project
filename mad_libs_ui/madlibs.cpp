@@ -164,7 +164,8 @@ QString MadLibs::vacationsStory() {
 QString MadLibs::solarStory() {
     QString adjs[] = {ui->sol_adj1->text(),ui->sol_adj2->text(),ui->sol_adj3->text(),ui->sol_adj4->text()};
     QString first_names[] = {ui->sol_first1->text(),ui->sol_first2->text(),ui->sol_first3->text(),ui->sol_first4->text(),ui->sol_first5->text(),ui->sol_first6->text(),ui->sol_first7->text()};
-    QString plnouns[] = {ui->sol_plnoun1->text(),ui->sol_plnoun2->text(),ui->sol_plnoun3->text()};
+    QString pln1 = ui->sol_plnoun1->text(), pln2 = ui->sol_plnoun2->text(), pln3 = ui->sol_plnoun3->text();
+    QString plnouns[] = {pln1,pln2,pln3};
 
     QString sol = readStory("C:\\Users\\beuyenj\\Documents\\le college\\PIC10C\\final project\\pic10c_final_project\\mad_libs_ui\\solarsystem.txt");
 
@@ -175,7 +176,7 @@ QString MadLibs::solarStory() {
         sol.replace("<FIRST_NAME"+QString::number(i+1)+">",first_names[i]);
     }
     for (int i = 0; i < plnouns->size(); i++) {
-        sol.replace("<PLURAL_NOUN"+QString::number(i+1)+">",adjs[i]);
+        sol.replace("<PLURAL_NOUN"+QString::number(i+1)+">",plnouns[i]);
     }
     sol.replace("<NOUN>",ui->sol_noun->text());
     sol.replace("<ADVERB>",ui->sol_adv->text());
