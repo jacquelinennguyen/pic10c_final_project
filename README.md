@@ -6,7 +6,9 @@ As of Thursday of Spring Break, the project is still in development. Because the
 
 The tricky part was trying to figure out how to find and replace every instance of a particular type of word (eg. noun) with the user inputed values. The idea was to store instances of that particular type of word in its own vector, use the find_if function from the STD library, and a lambda function in order to replace every instance of such word type. With more time, I could make this function more efficent, memory-wise at least, by making an algorithm to store all user input into one vector for example.
 
-I'm stuck on trying to get the file to read without having to copy the entire local path and also how to replace the placeholders in the story with the user input.
+I ended up calling the replace function in Qt multiple times. Qt C++ is really weird and a lot more limited than C++ on its own. Much of this project was getting used to Qt's C++ functionality.
+
+I'm stuck on trying to get the file to read without having to copy the entire local path.
 
 This is how the output is supposed to look like:
 
