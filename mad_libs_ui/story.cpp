@@ -12,15 +12,15 @@ Story::Story(QWidget *parent) :
 Story::~Story()
 {
     delete ui;
-    //delete mainWindow;
+
 }
 
 void Story::on_pushButton_clicked()
 {
-
+    hide();
 }
 
 void Story::on_pushButton_2_clicked()
 {
-
+    close();
 }

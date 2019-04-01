@@ -39,13 +39,12 @@ private slots:
     void on_VacationsButtonBox_rejected();
 
     QString thanksStory();
-    void vacationsStory();
-    void solarStory();
+    QString vacationsStory();
+    QString solarStory();
     QString readStory(QString f);
 
 private:
     Ui::MadLibs *ui;
-
 };
 
 #endif // MADLIBS_H

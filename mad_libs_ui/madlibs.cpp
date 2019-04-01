@@ -66,7 +66,29 @@ void MadLibs::on_ThanksgivingButtonBox_rejected()
 
 void MadLibs::on_SolarButtonBox_accepted()
 {
+    QObject::connect(ui->sol_adj1,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
+    QObject::connect(ui->sol_adj2,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
+    QObject::connect(ui->sol_adj3,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
+    QObject::connect(ui->sol_adj4,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
+    QObject::connect(ui->sol_adv,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
+    QObject::connect(ui->sol_ing,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
+    QObject::connect(ui->sol_num,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
+    QObject::connect(ui->sol_noun,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
+    QObject::connect(ui->sol_first1,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
+    QObject::connect(ui->sol_first2,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
+    QObject::connect(ui->sol_first3,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
+    QObject::connect(ui->sol_first4,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
+    QObject::connect(ui->sol_first5,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
+    QObject::connect(ui->sol_first6,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
+    QObject::connect(ui->sol_first7,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
+    QObject::connect(ui->sol_silly_noun,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
+    QObject::connect(ui->sol_plnoun1,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
+    QObject::connect(ui->sol_plnoun2,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
+    QObject::connect(ui->sol_plnoun3,SIGNAL(textChanged(QString)),this,SLOT(solarStory()));
 
+    Story *story = new Story(this);
+    story->ui->storyLabel->setText(solarStory());
+    story->show();
 }
 
 void MadLibs::on_SolarButtonBox_rejected()
@@ -134,10 +156,32 @@ QString MadLibs::thanksStory() {
     return th;
 }
 
-void MadLibs::vacationsStory() {
-
+QString MadLibs::vacationsStory() {
+    QString v;
+    return v;
 }
 
-void MadLibs::solarStory() {
+QString MadLibs::solarStory() {
+    QString adjs[] = {ui->sol_adj1->text(),ui->sol_adj2->text(),ui->sol_adj3->text(),ui->sol_adj4->text()};
+    QString first_names[] = {ui->sol_first1->text(),ui->sol_first2->text(),ui->sol_first3->text(),ui->sol_first4->text(),ui->sol_first5->text(),ui->sol_first6->text(),ui->sol_first7->text()};
+    QString plnouns[] = {ui->sol_plnoun1->text(),ui->sol_plnoun2->text(),ui->sol_plnoun3->text()};
 
+    QString sol = readStory("C:\\Users\\beuyenj\\Documents\\le college\\PIC10C\\final project\\pic10c_final_project\\mad_libs_ui\\solarsystem.txt");
+
+    for (int i = 0; i < adjs->size(); i++) {
+        sol.replace("<ADJECTIVE"+QString::number(i+1)+">",adjs[i]);
+    }
+    for (int i = 0; i < first_names->size(); i++) {
+        sol.replace("<FIRST_NAME"+QString::number(i+1)+">",first_names[i]);
+    }
+    for (int i = 0; i < plnouns->size(); i++) {
+        sol.replace("<PLURAL_NOUN"+QString::number(i+1)+">",adjs[i]);
+    }
+    sol.replace("<NOUN>",ui->sol_noun->text());
+    sol.replace("<ADVERB>",ui->sol_adv->text());
+    sol.replace("<VERB_ING>",ui->sol_ing->text());
+    sol.replace("<SILLY_NOUN>",ui->sol_silly_noun->text());
+    sol.replace("<NUMBER>",ui->sol_num->text());
+
+    return sol;
 }

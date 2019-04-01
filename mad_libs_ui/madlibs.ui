@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>551</width>
-    <height>449</height>
+    <height>492</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -56,7 +56,7 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="Thanksgiving">
        <layout class="QVBoxLayout" name="verticalLayout_4">
