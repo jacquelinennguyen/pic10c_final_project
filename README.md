@@ -13,6 +13,10 @@ This is how the output is supposed to look like:
 ![Thanksgiving_story](https://github.com/jacquelinennguyen/pic10c_final_project/blob/master/documentation/Ui_Thanksgiving.PNG?raw=true)
 ![OurSolarSystem_story](https://github.com/jacquelinennguyen/pic10c_final_project/blob/master/documentation/Ui_SolarSystem.PNG?raw=true)
 
+For QFile to work on your computer, you would have to copy your entire local path into QtCreator. I'm not sure why that is.
+
+The MinGW compiler on my end is rather finnicky so sometimes the program will compile and sometimes it will not.
+
 ### Navigating the repository
 In this repository, there are many files. Here is the general layout:
 
