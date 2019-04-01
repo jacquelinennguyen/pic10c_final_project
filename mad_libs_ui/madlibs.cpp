@@ -61,7 +61,7 @@ void MadLibs::on_ThanksgivingButtonBox_accepted()
 
 void MadLibs::on_ThanksgivingButtonBox_rejected()
 {
-
+    close();
 }
 
 void MadLibs::on_SolarButtonBox_accepted()
@@ -93,17 +93,39 @@ void MadLibs::on_SolarButtonBox_accepted()
 
 void MadLibs::on_SolarButtonBox_rejected()
 {
-
+    close();
 }
 
 void MadLibs::on_VacationsButtonBox_accepted()
 {
+    QObject::connect(ui->vac_adj1,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_adj2,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_adj3,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_ing1,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_ing2,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_ing3,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_ing4,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_noun1,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_noun2,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_noun3,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_place,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_plnoun1,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_plnoun2,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_plnoun3,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_plnoun4,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_body,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_plant,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_number,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_game,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
 
+    Story *story = new Story(this);
+    story->ui->storyLabel->setText(vacationsStory());
+    story->show();
 }
 
 void MadLibs::on_VacationsButtonBox_rejected()
 {
-
+    close();
 }
 
 QString MadLibs::readStory(QString f) {
@@ -157,7 +179,32 @@ QString MadLibs::thanksStory() {
 }
 
 QString MadLibs::vacationsStory() {
-    QString v;
+    QString adjs[] = {ui->vac_adj1->text(),ui->vac_adj2->text(),ui->vac_adj3->text()};
+    QString verbs_ing[] = {ui->vac_ing1->text(),ui->vac_ing2->text(),ui->vac_ing3->text(),ui->vac_ing4->text()};
+    QString nouns[] = {ui->vac_noun1->text(),ui->vac_noun2->text(),ui->vac_noun3->text()};
+    QString plnouns[] = {ui->vac_plnoun1->text(),ui->vac_plnoun2->text(),ui->vac_plnoun3->text(),ui->vac_plnoun4->text()};
+
+    QString v = readStory("C:\\Users\\beuyenj\\Documents\\le college\\PIC10C\\final project\\pic10c_final_project\\mad_libs_ui\\vacations.txt");
+
+    for (int i = 0; i < adjs->size(); i++) {
+        v.replace("<ADJECTIVE"+QString::number(i+1)+">",adjs[i]);
+    }
+    for (int i = 0; i < nouns->size(); i++) {
+        v.replace("<NOUN"+QString::number(i+1)+">",nouns[i]);
+    }
+    for (int i = 0; i < verbs_ing->size(); i++) {
+        v.replace("<VERB_ING"+QString::number(i+1)+">",verbs_ing[i]);
+    }
+    for (int i = 0; i < plnouns->size(); i++) {
+        v.replace("<PLURAL_NOUN"+QString::number(i+1)+">",plnouns[i]);
+    }
+
+    v.replace("<PLACE>",ui->vac_place->text());
+    v.replace("<BODY_PART>",ui->vac_body->text());
+    v.replace("<PLANT>",ui->vac_plant->text());
+    v.replace("<GAME>",ui->vac_game->text());
+    v.replace("<NUMBER>",ui->vac_number->text());
+
     return v;
 }
 

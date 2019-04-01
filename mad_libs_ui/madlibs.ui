@@ -56,7 +56,7 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="Thanksgiving">
        <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -693,7 +693,7 @@
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="body"/>
+               <widget class="QLineEdit" name="vac_body"/>
               </item>
              </layout>
             </item>
@@ -707,7 +707,7 @@
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="plant"/>
+               <widget class="QLineEdit" name="vac_plant"/>
               </item>
              </layout>
             </item>
@@ -863,7 +863,7 @@
               <item>
                <widget class="QLabel" name="label_53">
                 <property name="text">
-                 <string>Plura Noun 4:</string>
+                 <string>Plural Noun 4:</string>
                 </property>
                </widget>
               </item>
@@ -883,6 +883,34 @@
               </item>
               <item>
                <widget class="QLineEdit" name="vac_place"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_55">
+              <item>
+               <widget class="QLabel" name="label_56">
+                <property name="text">
+                 <string>Number:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="vac_number"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_53">
+              <item>
+               <widget class="QLabel" name="label_55">
+                <property name="text">
+                 <string>Game:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="vac_game"/>
               </item>
              </layout>
             </item>
