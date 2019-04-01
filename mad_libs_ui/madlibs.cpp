@@ -98,25 +98,25 @@ void MadLibs::on_SolarButtonBox_rejected()
 
 void MadLibs::on_VacationsButtonBox_accepted()
 {
-    QObject::connect(ui->vac_adj1,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
-    QObject::connect(ui->vac_adj2,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
-    QObject::connect(ui->vac_adj3,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
-    QObject::connect(ui->vac_ing1,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
-    QObject::connect(ui->vac_ing2,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
-    QObject::connect(ui->vac_ing3,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
-    QObject::connect(ui->vac_ing4,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
-    QObject::connect(ui->vac_noun1,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
-    QObject::connect(ui->vac_noun2,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
-    QObject::connect(ui->vac_noun3,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
-    QObject::connect(ui->vac_place,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
-    QObject::connect(ui->vac_plnoun1,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
-    QObject::connect(ui->vac_plnoun2,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
-    QObject::connect(ui->vac_plnoun3,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
-    QObject::connect(ui->vac_plnoun4,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
-    QObject::connect(ui->vac_body,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
-    QObject::connect(ui->vac_plant,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
-    QObject::connect(ui->vac_number,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
-    QObject::connect(ui->vac_game,SIGNAL(textChanged()),this,SIGNAL(vacationsStory()));
+    QObject::connect(ui->vac_adj1,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
+    QObject::connect(ui->vac_adj2,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
+    QObject::connect(ui->vac_adj3,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
+    QObject::connect(ui->vac_ing1,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
+    QObject::connect(ui->vac_ing2,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
+    QObject::connect(ui->vac_ing3,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
+    QObject::connect(ui->vac_ing4,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
+    QObject::connect(ui->vac_noun1,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
+    QObject::connect(ui->vac_noun2,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
+    QObject::connect(ui->vac_noun3,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
+    QObject::connect(ui->vac_place,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
+    QObject::connect(ui->vac_plnoun1,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
+    QObject::connect(ui->vac_plnoun2,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
+    QObject::connect(ui->vac_plnoun3,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
+    QObject::connect(ui->vac_plnoun4,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
+    QObject::connect(ui->vac_body,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
+    QObject::connect(ui->vac_plant,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
+    QObject::connect(ui->vac_number,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
+    QObject::connect(ui->vac_game,SIGNAL(textChanged(QString)),this,SLOT(vacationsStory()));
 
     Story *story = new Story(this);
     story->ui->storyLabel->setText(vacationsStory());
@@ -179,10 +179,11 @@ QString MadLibs::thanksStory() {
 }
 
 QString MadLibs::vacationsStory() {
+    QString pln4 = ui->vac_plnoun4->text();
     QString adjs[] = {ui->vac_adj1->text(),ui->vac_adj2->text(),ui->vac_adj3->text()};
     QString verbs_ing[] = {ui->vac_ing1->text(),ui->vac_ing2->text(),ui->vac_ing3->text(),ui->vac_ing4->text()};
     QString nouns[] = {ui->vac_noun1->text(),ui->vac_noun2->text(),ui->vac_noun3->text()};
-    QString plnouns[] = {ui->vac_plnoun1->text(),ui->vac_plnoun2->text(),ui->vac_plnoun3->text(),ui->vac_plnoun4->text()};
+    QString plnouns[] = {ui->vac_plnoun1->text(),ui->vac_plnoun2->text(),ui->vac_plnoun3->text(), pln4};
 
     QString v = readStory("C:\\Users\\beuyenj\\Documents\\le college\\PIC10C\\final project\\pic10c_final_project\\mad_libs_ui\\vacations.txt");
 
