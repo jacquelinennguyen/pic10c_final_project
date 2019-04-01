@@ -8,6 +8,10 @@ The tricky part was trying to figure out how to find and replace every instance 
 
 I'm stuck on trying to get the file to read without having to copy the entire local path and also how to replace the placeholders in the story with the user input.
 
+This is how the output is supposed to look like:
+
+![Thanksgiving_story](https://github.com/jacquelinennguyen/pic10c_final_project/blob/master/documentation/Ui_Thanksgiving.PNG?raw=true)
+
 ### Navigating the repository
 In this repository, there are many files. Here is the general layout:
 
