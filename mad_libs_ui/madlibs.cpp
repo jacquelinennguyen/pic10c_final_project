@@ -55,7 +55,7 @@ void MadLibs::on_ThanksgivingButtonBox_accepted()
     QObject::connect(ui->thx_plnoun2, SIGNAL(textChanged(QString)), this, SLOT(thanksStory()));
 
     Story *story = new Story(this);
-    story->ui->storyLabel->setText(readStory("C:\\Users\\beuyenj\\Documents\\le college\\PIC10C\\final project\\pic10c_final_project\\mad_libs_ui\\thanksgiving.txt"));
+    story->ui->storyLabel->setText(thanksStory());
     story->show();
 }
 
@@ -98,7 +98,7 @@ QString MadLibs::readStory(QString f) {
 
 //void printStory(QString f) {}
 
-void MadLibs::thanksStory() {
+QString MadLibs::thanksStory() {
     QString nouns[7];
     nouns[0] = ui->thx_noun1->text(); nouns[1] = ui->thx_noun2->text();
     nouns[2] = ui->thx_noun3->text(); nouns[3] = ui->thx_noun4->text();
@@ -113,7 +113,11 @@ void MadLibs::thanksStory() {
     QString person = ui->thx_person->text(); QString plbody = ui->thx_plbody->text();
     QString plnoun1 = ui->thx_plnoun1->text(); QString plnoun2 = ui->thx_plnoun2->text();
 
-
+    QString th = readStory("C:\\Users\\beuyenj\\Documents\\le college\\PIC10C\\final project\\pic10c_final_project\\mad_libs_ui\\thanksgiving.txt");
+    for (int i = 0; i < nouns->size(); i++) {
+        th.replace("<NOUN"+QString::number(i+1)+">",nouns[i]);
+    }
+    return th;
 }
 
 void MadLibs::vacationsStory() {

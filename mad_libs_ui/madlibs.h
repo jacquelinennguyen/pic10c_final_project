@@ -38,7 +38,7 @@ private slots:
 
     void on_VacationsButtonBox_rejected();
 
-    void thanksStory();
+    QString thanksStory();
     void vacationsStory();
     void solarStory();
     QString readStory(QString f);
