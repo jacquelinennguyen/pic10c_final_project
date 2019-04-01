@@ -175,7 +175,7 @@ QString MadLibs::solarStory() {
         sol.replace("<FIRST_NAME"+QString::number(i+1)+">",first_names[i]);
     }
     for (int i = 0; i < plnouns->size(); i++) {
-        sol.replace("<PLURAL_NOUN"+QString::number(i+1)+">",adjs[i]);
+        sol.replace("<PLURAL_NOUN"+QString::number(i+1)+">",plnouns[i]);
     }
     sol.replace("<NOUN>",ui->sol_noun->text());
     sol.replace("<ADVERB>",ui->sol_adv->text());
