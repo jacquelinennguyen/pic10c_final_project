@@ -110,7 +110,7 @@ QString MadLibs::readStory(QString f) {
     QFile file(f);
     //file.open(QFile::Text);
     if (!file.open(QFile::ReadOnly | QFile::Text)) {
-      QMessageBox::warning(this,"title","file not open");
+      //QMessageBox::warning(this,"title","file not open");
     }
     QTextStream in(&file);
     QString s = in.readAll();
